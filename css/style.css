@@ -1,0 +1,153 @@
+
+@font-face {
+    font-family: 'Luciole'; /* Webfont: Luciole-Regular */
+    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.svg#Luciole-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+@font-face {
+    font-family: 'Rossten'; /* Webfont: Rossten-Regular */
+    src: url('../fonts/Rossten/ROSSTEN.otf') format('opentype'), /* opentype */
+         url('../fonts/Rossten/ROSSTEN.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+:root {
+    font-family: Luciole;
+    --default-bg-color: white;
+    --header-bg-color: var(--default-bg-color);
+    --main-bg-color: var(--default-bg-color);
+    --footer-bg-color: var(--default-bg-color);
+    --nav-bg-color: var(--default-bg-color);
+    --link-bg-color: var(--default-bg-color);
+    --text-color: black;
+    --a-color: black;
+    --a-hover-color: darkred;
+    --label-a-hover-bg-color: var(--default-bg-color);
+    --max-body-width: 900px;
+}
+body{
+    background-image: url("../images/oak-wood-texture-design-background.jpg");
+    background-size: 100vw;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+}
+header{
+    background-color: var(--header-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px;
+}
+.title{
+    display: block;
+}
+h1{
+    font-family: Rossten;
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 8vw;
+}
+header p{
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+    margin: 0px;
+}
+main{
+    background-color: var(--main-bg-color);
+    box-shadow: 2px 2px 2px;
+}
+footer{
+    background-color: var(--footer-bg-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 2px;
+}
+nav{
+    background-color: var(--nav-bg-color);
+}
+ul{
+    list-style-type: none;
+}
+a {
+    color: var(--a-color);
+    text-decoration: none;
+    text-rendering: geometricPrecision;
+    transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    transform-origin: 50% 30%;
+}
+a:hover{
+    color: var(--a-hover-color);
+    transform: scale(1.1);
+}
+.barnav{
+    display: none;
+}
+#hamburger{
+    display: none;
+}
+.hamnav{
+    display: flex;
+    flex-direction: row-reverse;
+    position: sticky;
+}
+/* (A) BREAK INTO VERTICAL MENU */
+#hamitems a {
+    box-sizing: border-box;
+    display: block;
+    border-top: 1px solid black;
+    padding: 5px 5px;
+}
+/* (B) SHOW HAMBURGER ICON */
+.hamnav label { 
+    display: inline-block; 
+    color: rgb(86, 5, 5);
+    background: var(--nav-bg-color);
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+/* (C) TOGGLE SHOW/HIDE MENU */
+#hamitems { display: none; }
+.hamnav input:checked ~ #hamitems { display: block; }
+@media screen and (min-width: 400px) {
+    
+}
+@media screen and (min-width: 900px) {
+    body{
+        padding: 0 10vw;
+    }
+    header{
+        max-width: var(--max-body-width);
+    }
+    main{
+        max-width: var(--max-body-width);
+    }
+    footer{
+        max-width: var(--max-body-width);
+    }
+    .hamnav{
+        display: none;
+    }
+    .barnav{
+        display: block;
+        flex-grow: 1;
+    }
+    .barnav ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 8px;
+    }
+}
