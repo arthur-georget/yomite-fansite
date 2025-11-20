@@ -1,19 +1,19 @@
 
 @font-face {
     font-family: 'Luciole'; /* Webfont: Luciole-Regular */
-    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.svg#Luciole-Regular') format('svg'); /* Legacy iOS */
+    src: url('./fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/Luciole_webfonts/Luciole-Regular/Luciole-Regular.svg#Luciole-Regular') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 @font-face {
     font-family: 'Rossten'; /* Webfont: Rossten-Regular */
-    src: url('../fonts/Rossten/ROSSTEN.otf') format('opentype'), /* opentype */
-         url('../fonts/Rossten/ROSSTEN.ttf') format('truetype'); /* Safari, Android, iOS */
+    src: url('./fonts/Rossten/ROSSTEN.otf') format('opentype'), /* opentype */
+         url('./fonts/Rossten/ROSSTEN.ttf') format('truetype'); /* Safari, Android, iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -33,7 +33,7 @@
     --max-body-width: 900px;
 }
 body{
-    background-image: url("../images/oak-wood-texture-design-background.jpg");
+    background-image: url("./images/oak-wood-texture-design-background.jpg");
     background-size: 100vw;
     color: var(--text-color);
     display: flex;
@@ -127,15 +127,18 @@ a:hover{
 }
 @media screen and (min-width: 900px) {
     body{
-        padding: 0 10vw;
+        align-items: center;
     }
     header{
+        width: 80vw;
         max-width: var(--max-body-width);
     }
     main{
+        width: 80vw;
         max-width: var(--max-body-width);
     }
     footer{
+        width: 80vw;
         max-width: var(--max-body-width);
     }
     .hamnav{
