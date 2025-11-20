@@ -66,6 +66,7 @@ header p{
 main{
     background-color: var(--main-bg-color);
     box-shadow: 2px 2px 2px;
+    padding: 5vw;
 }
 footer{
     background-color: var(--footer-bg-color);
