@@ -40,16 +40,6 @@ body{
     flex-direction: column;
     padding: 0 0;
 }
-header{
-    background-color: var(--header-bg-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 2px 2px 2px;
-}
-.title{
-    display: block;
-}
 h1{
     font-family: Rossten;
     font-size: 60px;
@@ -57,16 +47,37 @@ h1{
     padding-top: 10px;
     padding-left: 8vw;
 }
+h2{
+    padding-left: 5vw;
+}
+h3{
+    padding-left: 5vw
+}
+article{
+    margin: 10px;
+}
+header{
+    background-color: var(--header-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px;
+}
 header p{
     width: 100%;
     font-style: italic;
     text-align: right;
     margin: 0px;
 }
+.title{
+    display: block;
+}
 main{
     background-color: var(--main-bg-color);
-    box-shadow: 2px 2px 2px;
-    padding: 5vw;
+    box-shadow: 2px 2px 2px;  
+}
+main p{
+    padding-left: 5vw;
 }
 footer{
     background-color: var(--footer-bg-color);
@@ -103,6 +114,8 @@ a:hover{
     display: flex;
     flex-direction: row-reverse;
     position: sticky;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 /* (A) BREAK INTO VERTICAL MENU */
 #hamitems a {
