@@ -33,7 +33,8 @@
     --max-body-width: 900px;
 }
 body{
-    background-image: url("./images/oak-wood-texture-design-background.jpg");
+    /* background-image: url("./images/oak-wood-texture-design-background.jpg"); */
+    background-color: grey;
     background-size: 100vw;
     color: var(--text-color);
     display: flex;
@@ -115,28 +116,48 @@ a:hover{
     position: sticky;
     margin-top: 20px;
     margin-right: 20px;
+    margin-left: 10px;
 }
 /* (A) BREAK INTO VERTICAL MENU */
 #hamitems a {
     box-sizing: border-box;
     display: block;
-    border-top: 1px solid black;
-    padding: 5px 5px;
+    border-top: 2px solid black;
+    padding: 10px 5px;
 }
 /* (B) SHOW HAMBURGER ICON */
 .hamnav label { 
     display: inline-block; 
-    color: rgb(86, 5, 5);
+    color: black;
     background: var(--nav-bg-color);
     font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
+    font-size: 2em;
 }
 /* (C) TOGGLE SHOW/HIDE MENU */
 #hamitems { display: none; }
 .hamnav input:checked ~ #hamitems { display: block; }
-@media screen and (min-width: 400px) {
-    
+
+.mangakas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+.mangaka{
+    width: 80%;
+    border: 4px solid black;
+}
+.mangaka img{
+    width: 100%;
+    height: auto;
+}
+.bubble{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15% 10%;
+    bottom: 15%;
 }
 @media screen and (min-width: 900px) {
     body{
@@ -165,5 +186,16 @@ a:hover{
         display: flex;
         justify-content: space-evenly;
         padding: 20px 8px;
+    }
+    .mangakas{
+        display: flex;
+        flex-direction: row;
+    }
+    .mangaka{
+        width: 25%;
+    }
+    .mangaka img{
+        width: 100%;
+        height: auto;
     }
 }
