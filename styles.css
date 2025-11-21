@@ -48,10 +48,10 @@ h1{
     padding-left: 8vw;
 }
 h2{
-    padding-left: 5vw;
+    padding-left: 5%;
 }
 h3{
-    padding-left: 5vw
+    padding-left: 5%;
 }
 article{
     margin: 10px;
@@ -77,7 +77,7 @@ main{
     box-shadow: 2px 2px 2px;  
 }
 main p{
-    padding-left: 5vw;
+    padding-left: 10%;
 }
 footer{
     background-color: var(--footer-bg-color);
@@ -102,7 +102,6 @@ a {
 }
 a:hover{
     color: var(--a-hover-color);
-    transform: scale(1.1);
 }
 .barnav{
     display: none;
