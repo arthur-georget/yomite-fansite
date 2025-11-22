@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./css/fansite3-styles.css">
+    <link rel="stylesheet" href="./css/contact-styles.css">
+    <!-- Script JavaScript -->
+    <script>
+        // Lorsque le formulaire est soumis
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire
+            document.querySelector('.video-container').style.display = 'block'; // Affiche le conteneur de la vidéo
+        });
+    </script>
+    <title>YOMITE - Taiyō Matsumoto</title>
+    
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="../index.html">
+                <h1>YOMITE</h1>
+                <p>Celui qui lit</p>
+            </a>
+        </div>
+        <nav class="barnav">
+            <ul>
+                <li><a href="../fansite3/fansite3.html">Taiyo Matsumoto</a></li>
+                <li><a href="../fansite3/oeuvres.html">Oeuvres</a></li>
+                <li><a href="../fansite3/adaptations.html">Adaptations</a></li>
+                <li><a href="../fansite3/evenements.html">Evènements</a></li>
+                <li><a href="../fansite3/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="hamitems">
+                <a href="../fansite3/fansite3.html">Taiyo Matsumoto</a>
+                <a href="../fansite3/oeuvres.html">Oeuvres</a>
+                <a href="../fansite3/adaptations.html">Adaptations</a>
+                <a href="../fansite3/evenements.html">Evènements</a>
+                <a href="../fansite3/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact</h2>
+        <!-- Conteneur principal -->
+        <section class="container">
+            <!-- Formulaire de contact -->
+            <article class="form-container">
+                <h3>Contactez-nous</h3> <!-- Titre de la page de contact -->
+
+                <!-- Début du formulaire -->
+                <form id="contactForm" action="#" method="post"> <!-- Formulaire avec méthode POST (les données ne sont pas envoyées ici, il s'agit de la partie front-end uniquement) -->
+
+                    <!-- Civilité (liste déroulante) -->
+                    <div class="form-group">
+                        <label for="civilite">Civilité</label> <!-- Label pour la liste déroulante -->
+                        <select id="civilite" name="civilite" required> <!-- Liste déroulante pour la sélection de la civilité -->
+                            <option value="" disabled selected>Choisissez votre civilité</option> <!-- Option par défaut désactivée -->
+                            <option value="monsieur">Monsieur</option> <!-- Option pour "Monsieur" -->
+                            <option value="madame">Madame</option> <!-- Option pour "Madame" -->
+                            <option value="mademoiselle">Mademoiselle</option> <!-- Option pour "Mademoiselle" -->
+                        </select>
+                    </div>
+
+                    <!-- Nom -->
+                    <div class="form-group">
+                        <label for="nom">Nom</label> <!-- Label pour le champ de nom -->
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom" required> <!-- Champ de texte pour le nom -->
+                    </div>
+
+                    <!-- Prénom -->
+                    <div class="form-group">
+                        <label for="prenom">Prénom</label> <!-- Label pour le champ de prénom -->
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required> <!-- Champ de texte pour le prénom -->
+                    </div>
+
+                    <!-- Adresse postale -->
+                    <div class="form-group">
+                        <label for="adresse">Adresse postale</label> <!-- Label pour le champ d'adresse -->
+                        <textarea id="adresse" name="adresse" placeholder="Votre adresse postale" required></textarea> <!-- Zone de texte pour l'adresse postale -->
+                    </div>
+
+                    <!-- Politique de confidentialité -->
+                    <div class="checkbox-group">
+                        <label for="politique">
+                            <input type="checkbox" id="politique" name="politique" required> <!-- Checkbox pour accepter la politique de confidentialité -->
+                            J'accepte la <a href="../Politique-de-confidentialite-rgpd.pdf">politique de confidentialité</a> de Yomite.
+                        </label>
+                    </div>
+
+                    <!-- Bouton de soumission -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Envoyer</button> <!-- Bouton pour soumettre le formulaire -->
+                    </div>
+
+                </form> <!-- Fin du formulaire -->
+
+            </article> <!-- Fin du conteneur du formulaire -->
+
+            <!-- Conteneur pour l'image -->
+            <div class="image-container">
+                <img src="../images/content.png" alt="Service Après-Vente"> <!-- Affiche l'image avec un texte alternatif -->
+            </div>
+        </section> <!-- Fin du conteneur principal -->
+
+        <!-- Conteneur pour la vidéo, cachée par défaut -->
+        <div class="video-container" id="videoContainer">
+            <video controls autoplay>
+                <source src="../images/reponse.mp4" type="video/mp4"> <!-- Source de la vidéo -->
+                Votre navigateur ne prend pas en charge la vidéo.
+            </video>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <nav class="global-footer-nav">
+            <ul>
+                <li><a href="../index.html">YOMITE</a></li>
+                <li><a href="../fansite1/fansite1.html">Akira Toriyama</a></li>
+                <li><a href="../fansite2/fansite2.html">Tatsuki Fujimoto</a></li>
+            </ul>
+        </nav>
+        <nav class="fansite3-footer-nav">
+            <ul>
+                <li><a href="../fansite3/fansite3.html">Taiyo Matsumoto</a></li>
+                <li><a href="../fansite3/oeuvres.html">Oeuvres</a></li>
+                <li><a href="../fansite3/adaptations.html">Adaptations</a></li>
+                <li><a href="../fansite3/evenements.html">Evènements</a></li>
+                <li><a href="../fansite3/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="sources">
+            <ul>
+                <li><a href="https://www.facebook.com/p/Taiyou-MATSUMOTO-100031968170653/">Facebook</a></li>
+                <li><a href="https://www.tumblr.com/taiyomatsumoto">Tumblr</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Taiy%C5%8D_Matsumoto">Wikipedia</a></li>
+                <li><a href="https://www.manga-news.com/index.php/auteur/MATSUMOTO-Taiyo">Manga-News</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
