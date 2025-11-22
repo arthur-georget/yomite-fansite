@@ -1,0 +1,91 @@
+/* --- IMAGE DE FOND EN PLEIN ÉCRAN --- */
+body {
+    background-image: src=("images./fond.png");
+    background-size: cover; /* S'assure que l'image couvre tout l'écran */
+    background-position: center center; /* Centre l'image de fond */
+    background-attachment: fixed; /* Rendre l'image de fond fixe lors du défilement */
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 100%; /* Prend toute la hauteur de l'écran */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+/* Structure générale */
+html, body {
+    height: 100%; /* Assure que le body et l'html prennent toute la hauteur de la fenêtre */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+/* BARRE COMMUNE (header et footer) */
+.barre {
+    width: 885px; /* Largeur fixe de la barre */
+    height: 80px; /* Hauteur de la barre */
+    margin: 0 auto; /* Centre la barre horizontalement */
+    display: flex; /* Utilise flexbox pour la disposition des éléments à l'intérieur */
+    align-items: center; /* Aligne les éléments sur l'axe vertical */
+    justify-content: space-between; /* Espace les éléments de manière égale */
+    padding: 0 25px; /* Ajoute de l'espace autour des éléments internes */
+}
+
+/* Header avec image */
+header.barre {
+    background: url("images./header.png") center/cover no-repeat; /* Applique une image de fond pour le header */
+}
+
+/* Footer avec image */
+footer.barre.footer {
+    background: url("images./footer.png") center/cover no-repeat; /* Applique une image de fond pour le footer */
+    min-height: 150px; /* Définit une hauteur minimale pour le footer */
+    padding: 30px 0; /* Ajoute de l'espace autour du footer */
+    max-width: 885px; /* Largeur maximale du footer */
+    margin-top: auto; /* Fait en sorte que le footer soit en bas de la page */
+    color: #2d1f1f; /* Définit la couleur du texte dans le footer */
+    text-align: center; /* Centre le texte dans le footer */
+}
+
+/* Logo uniquement pour le header */
+.logo {
+    display: flex; /* Utilise flexbox pour organiser les éléments du logo */
+    flex-direction: column; /* Organise le logo en colonne */
+    line-height: 1.1; /* Définit l'espacement entre les lignes du logo */
+    cursor: pointer; /* Change le curseur en pointeur au survol */
+}
+
+.logo .title {
+    font-size: 32px; /* Taille du titre */
+    font-weight: 500; /* Poids du titre (semi-gras) */
+    color: #2d1f1f; /* Couleur du titre */
+}
+
+.logo .subtitle {
+    font-size: 18px; /* Taille du sous-titre */
+    font-style: italic; /* Applique un style italique */
+    color: #2d1f1f; /* Couleur du sous-titre */
+    margin-top: 4px; /* Ajoute un espacement au-dessus du sous-titre */
+}
+
+/* Menu uniquement pour le header */
+.menu {
+    display: flex; /* Utilise flexbox pour organiser les éléments du menu */
+    gap: 35px; /* Ajoute un écart entre les éléments du menu */
+}
+
+.menu span {
+    color: #2d1f1f; /* Couleur des éléments du menu */
+    font-size: 15px; /* Taille de la police des éléments du menu */
+    cursor: pointer; /* Change le curseur en pointeur au survol */
+    transition: 0.2s; /* Ajoute une transition douce lors du survol */
+}
+
+.menu span.bold {
+    font-weight: bold; /* Met en gras l'élément avec la classe "bold" */
+}
+
+/* Hover */
+.menu span:hover,
+.logo:hover .title,
+.logo:hover .subtitle {
+    color: #5b3c3c; /* Change la couleur des éléments au survol */
+}

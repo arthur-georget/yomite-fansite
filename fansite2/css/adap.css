@@ -1,0 +1,76 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Conteneur principal */
+.adapt-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style pour chaque bloc */
+.adapt-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adapt-section p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.adapt-section strong {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Vidéo responsive */
+.video-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000; /* couleur par défaut en attendant chargement */
+}
+
+/* Iframe vidéo */
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Suppression de l'ancien hover (inutile pour une vidéo) */
+/* Mais si tu veux un effet : */
+.video-box:hover {
+    opacity: 0.95;
+    transition: 0.2s ease;
+}
+
+/* Responsive : écran mobile */
+@media (max-width: 768px) {
+    .adapt-container {
+        padding: 15px;
+    }
+
+    .adapt-section {
+        padding: 15px;
+    }
+}
