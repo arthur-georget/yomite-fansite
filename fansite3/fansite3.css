@@ -52,6 +52,52 @@ video {
     max-width: 100%;
     height: auto;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 40px;
+}
+form div {
+    margin-bottom: 20px;
+}
+form label {
+    font-size: 15px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.checkbox-group {
+    margin-top: 10px;
+}
+.submit-button {
+    background-color: #6a4c9c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+.submit-button:hover {
+    background-color: #08070a;
+}
 @media screen and (min-width: 600px) {
     .gallery{
         column-count: 2;
