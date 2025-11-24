@@ -3,7 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;                 /* espace entre chaque bloc */
+    gap: 60px; /* espace entre chaque bloc */
     padding: 40px 0;
 }
 
@@ -22,14 +22,14 @@ main {
 /* Contenu interne du bloc */
 .bloc-content {
     display: flex;
-    flex-direction: row;       /* image à gauche + texte à droite */
+    flex-direction: row; /* image à gauche + texte à droite */
     align-items: center;
     gap: 40px;
 }
 
 /* Style des images dans les blocs */
 .bloc-content img {
-    width: 380px;              /* taille augmentée */
+    width: 380px; /* taille augmentée */
     height: auto;
     border-radius: 6px;
     cursor: pointer;
@@ -48,33 +48,4 @@ main {
     font-weight: 500;
     text-align: left;
     max-width: 70%;
-}
-
-/* Responsive – tablette */
-@media (max-width: 900px) {
-    .bloc {
-        width: 85%;
-    }
-    .bloc-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .bloc-content p {
-        max-width: 100%;
-        text-align: center;
-    }
-}
-
-/* Responsive – mobile */
-@media (max-width: 600px) {
-    .bloc {
-        width: 95%;
-        padding: 25px;
-    }
-    .bloc-content img {
-        width: 220px;
-    }
-    .bloc-content p {
-        font-size: 1.3rem;
-    }
 }
