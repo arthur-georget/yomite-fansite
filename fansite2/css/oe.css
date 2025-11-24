@@ -1,53 +1,52 @@
-/* Conteneur principal qui enveloppe toutes les sections */
+
 .container {
     display: flex;
-    flex-wrap: wrap; /* Permet aux sections de se répartir sur plusieurs lignes */
-    gap: 30px; /* Ajoute un écart entre les sections */
-    justify-content: flex-start; /* Aligne les sections à gauche */
-    margin-top: 60px; /* Augmente l'espace au-dessus du contenu principal pour que le header soit visible */
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: flex-start; 
+    margin-top: 60px; 
     padding: 5px;
     width: 100%;
-    max-width: 1200px; /* Ajuste la largeur du conteneur principal */
-    margin: 0 auto; /* Centre le conteneur */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
-/* Section générale, chaque bloc contenant une image et une description */
+
 .section {
-    background-color: #fff; /* Fond blanc pour les sections */
-    border: 2px solid #2d1f1f; /* Bordure autour des sections */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce autour des sections */
-    padding: 20px; /* Espacement interne */
+    background-color: #fff; 
+    border: 2px solid #2d1f1f; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
     display: flex;
-    flex-direction: column; /* Organisation des éléments en colonne (image en haut, texte en bas) */
-    gap: 15px; /* Espacement entre l'image et le texte */
-    width: 100%; /* Prend toute la largeur disponible */
-    max-width: 400px; /* Limite la largeur des sections pour les rendre plus petites */
-    margin: 0 15px; /* Ajoute un écart horizontal entre les sections */
-    text-align: center; /* Centre le texte */
-    box-sizing: border-box; /* Prend en compte le padding dans le calcul de la largeur */
+    flex-direction: column; 
+    gap: 15px; 
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 15px; 
+    text-align: center;
+    box-sizing: border-box; 
 }
 
-/* Image dans chaque section */
 .image-container {
     display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
-    align-items: center; /* Centre l'image verticalement */
-    width: 100%; /* Prend toute la largeur du conteneur de la section */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
 }
 
 .image-container img {
-    max-width: 80%; /* Réduit la taille de l'image à 80% de la largeur disponible */
+    max-width: 80%; 
     height: auto;
-    border-radius: 8px; /* Coins arrondis pour l'image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce autour de l'image */
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Texte de chaque section */
 .section p {
-    font-size: 14px; /* Réduit la taille du texte */
-    line-height: 1.5; /* Réduit l'espacement entre les lignes */
-    color: #333; /* Couleur du texte */
-    margin: 0; /* Supprime les marges par défaut */
+    font-size: 14px; 
+    line-height: 1.5; 
+    color: #333; 
+    margin: 0; 
 }
 
