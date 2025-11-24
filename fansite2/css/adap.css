@@ -66,6 +66,7 @@
 
 /* Responsive : écran mobile */
 @media (max-width: 768px) {
+    /* Réduire les paddings pour les petits écrans */
     .adapt-container {
         padding: 15px;
     }
@@ -73,4 +74,53 @@
     .adapt-section {
         padding: 15px;
     }
+
+    /* Réduire la taille de la police sur les petits écrans */
+    .adapt-section p {
+        font-size: 0.9rem;
+    }
+
+    .adapt-section strong {
+        font-size: 1.1rem;
+    }
+
+    /* Adapter la vidéo */
+    .video-box {
+        padding-bottom: 56.25%; /* Toujours en 16:9 */
+        height: auto;
+    }
+
+    /* Ajuster la largeur de la vidéo */
+    .video-box iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Appliquer un espacement plus grand entre les sections */
+    .adapt-container {
+        gap: 15px;
+    }
 }
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    /* Réduire encore plus la taille des textes */
+    .adapt-section p {
+        font-size: 0.85rem;
+    }
+
+    .adapt-section strong {
+        font-size: 1rem;
+    }
+
+    /* Adapter encore plus l'espacement entre les éléments */
+    .adapt-container {
+        gap: 10px;
+    }
+
+    /* Si nécessaire, on ajuste les padding encore plus */
+    .adapt-container, .adapt-section {
+        padding: 10px;
+    }
+}
+

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>fansite2</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="./css/fansito.css">
+    <link rel="stylesheet" href="./css/fansite2.css">
 </head>
 <body>
     <header>
@@ -23,13 +24,24 @@
                 <li><a href="../fansite2/contact.html">Contact</a></li>
             </ul>
         </nav>
+    <nav class="hamnav">
+        <label for="hamburger"><svg height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></label>
+        <input type="checkbox" id="hamburger"/>
+        <div id="hamitems">
+            <a href="../fansite2/fansite2.html">Tatsuki Fujimoto</a>
+            <a href="../fansite2/oeuvres.html">Oeuvres</a>
+            <a href="../fansite2/adaptations.html">Adaptations</a>
+            <a href="../fansite2/evenements.html">Evènements</a>
+            <a href="../fansite2/contact.html">Contact</a>
+        </div>
+    </nav>
     </header>
 
     <main>
         <div class="main-content">
             <div class="auteur-biographie">
                 <div class="auteur-image">
-                    <img class="cercle-image" src="../images/fujimoto.png" alt="Tatsuki Fujimoto">
+                    <img class="cercle-image" src="./images/fujimoto.png" alt="Tatsuki Fujimoto">
                 </div>
                 <div class="auteur-citation">
                     "Je vis dans une boîte en carton au bord de la rivière en dessinant des mangas. Je ne souris plus comme ça maintenant."
@@ -44,12 +56,12 @@
 
         <!-- Galerie principale -->
         <div class="image-container">
-            <div class="image-item"><a href="#cover1"><img src="../images/cover1.png" alt="cover1"></a></div>
-            <div class="image-item"><a href="#cover2"><img src="../images/cover2.png" alt="cover2"></a></div>
-            <div class="image-item"><a href="#cover3"><img src="../images/cover3.png" alt="cover3"></a></div>
-            <div class="image-item"><a href="#cover4"><img src="../images/cover4.png" alt="cover4"></a></div>
-            <div class="image-item"><a href="#cover5"><img src="../images/cover5.png" alt="cover5"></a></div>
-            <div class="image-item"><a href="#cover6"><img src="../images/cover6.png" alt="cover6"></a></div>
+            <div class="image-item"><a href="#cover1"><img src="./images/cover1.png" alt="cover1"></a></div>
+            <div class="image-item"><a href="#cover2"><img src="./images/cover2.png" alt="cover2"></a></div>
+            <div class="image-item"><a href="#cover3"><img src="./images/cover3.png" alt="cover3"></a></div>
+            <div class="image-item"><a href="#cover4"><img src="./images/cover4.png" alt="cover4"></a></div>
+            <div class="image-item"><a href="#cover5"><img src="./images/cover5.png" alt="cover5"></a></div>
+            <div class="image-item"><a href="#cover6"><img src="./images/cover6.png" alt="cover6"></a></div>
         </div>
 
         <!-- Nouvelle catégorie galerie avec sous-catégories -->
@@ -60,15 +72,15 @@
             <div class="galerie-category" id="cover1">
                 <h3>Chainsaw man</h3>
                 <div class="first-image">
-                    <img src="../images/cover1.png" alt="cover1">
+                    <img src="./images/cover1.png" alt="cover1">
                 </div>
                 <div class="other-images">
-                    <div class="image-item"><img src="../images/cm1.png" alt="cover1"></div>
-                    <div class="image-item"><img src="../images/cm2.png" alt="cover1"></div>
-                    <div class="image-item"><img src="../images/cm3.png" alt="cover1"></div>
-                    <div class="image-item"><img src="../images/cm4.png" alt="cover1"></div>
-                    <div class="image-item"><img src="../images/cm5.png" alt="cover1"></div>
-                    <div class="image-item"><img src="../images/cm6.png" alt="cover1"></div>
+                    <div class="image-item"><img src="./images/cm1.png" alt="cover1"></div>
+                    <div class="image-item"><img src="./images/cm2.png" alt="cover1"></div>
+                    <div class="image-item"><img src="./images/cm3.png" alt="cover1"></div>
+                    <div class="image-item"><img src="./images/cm4.png" alt="cover1"></div>
+                    <div class="image-item"><img src="./images/cm5.png" alt="cover1"></div>
+                    <div class="image-item"><img src="./images/cm6.png" alt="cover1"></div>
                 </div>
             </div>
 
@@ -76,15 +88,15 @@
             <div class="galerie-category" id="cover2">
                 <h3>Fire punch</h3>
                 <div class="first-image">
-                    <img src="../images/cover2.png" alt="cover2">
+                    <img src="./images/cover2.png" alt="cover2">
                 </div>
                 <div class="other-images">
-                    <div class="image-item"><img src="../images/fp3.png" alt="cover2"></div>
-                    <div class="image-item"><img src="../images/fp1.png" alt="cover2"></div>
-                    <div class="image-item"><img src="../images/fp5.png" alt="cover2"></div>
-                    <div class="image-item"><img src="../images/fp6.png" alt="cover2"></div>
-                    <div class="image-item"><img src="../images/fp2.png" alt="cover2"></div>
-                    <div class="image-item"><img src="../images/fp4.png" alt="cover2"></div>
+                    <div class="image-item"><img src="./images/fp3.png" alt="cover2"></div>
+                    <div class="image-item"><img src="./images/fp1.png" alt="cover2"></div>
+                    <div class="image-item"><img src="./images/fp5.png" alt="cover2"></div>
+                    <div class="image-item"><img src="./images/fp6.png" alt="cover2"></div>
+                    <div class="image-item"><img src="./images/fp2.png" alt="cover2"></div>
+                    <div class="image-item"><img src="./images/fp4.png" alt="cover2"></div>
                 </div>
             </div>
 
@@ -92,15 +104,15 @@
             <div class="galerie-category" id="cover3">
                 <h3>Adieu Eri</h3>
                 <div class="first-image">
-                    <img src="../images/cover3.png" alt="cover3">
+                    <img src="./images/cover3.png" alt="cover3">
                 </div>
                 <div class="other-images">
-                    <div class="image-item"><img src="../images/ae.1.png" alt="cover3"></div>
-                    <div class="image-item"><img src="../images/ae.2.png" alt="cover3"></div>
-                    <div class="image-item"><img src="../images/ae.4.png" alt="cover3"></div>
-                    <div class="image-item"><img src="../images/ae.3.png" alt="cover3"></div>
-                    <div class="image-item"><img src="../images/ae.5.png" alt="cover3"></div>
-                    <div class="image-item"><img src="../images/ae.6.png" alt="cover3"></div>
+                    <div class="image-item"><img src="./images/ae.1.png" alt="cover3"></div>
+                    <div class="image-item"><img src="./images/ae.2.png" alt="cover3"></div>
+                    <div class="image-item"><img src="./images/ae.4.png" alt="cover3"></div>
+                    <div class="image-item"><img src="./images/ae.3.png" alt="cover3"></div>
+                    <div class="image-item"><img src="./images/ae.5.png" alt="cover3"></div>
+                    <div class="image-item"><img src="./images/ae.6.png" alt="cover3"></div>
                 </div>
             </div>
 
@@ -108,15 +120,15 @@
             <div class="galerie-category" id="cover4">
                 <h3>Look back</h3>
                 <div class="first-image">
-                    <img src="../images/cover4.png" alt="cover4">
+                    <img src="./images/cover4.png" alt="cover4">
                 </div>
                 <div class="other-images">
-                    <div class="image-item"><img src="../images/LB.1.png" alt="cover4"></div>
-                    <div class="image-item"><img src="../images/LB.3.png" alt="cover4"></div>
-                    <div class="image-item"><img src="../images/LB.2.png" alt="cover4"></div>
-                    <div class="image-item"><img src="../images/LB.6.png" alt="cover4"></div>
-                    <div class="image-item"><img src="../images/LB.5.png" alt="cover4"></div>
-                    <div class="image-item"><img src="../images/LB.4.png" alt="cover4"></div>
+                    <div class="image-item"><img src="./images/LB.1.png" alt="cover4"></div>
+                    <div class="image-item"><img src="./images/LB.3.png" alt="cover4"></div>
+                    <div class="image-item"><img src="./images/LB.2.png" alt="cover4"></div>
+                    <div class="image-item"><img src="./images/LB.6.png" alt="cover4"></div>
+                    <div class="image-item"><img src="./images/LB.5.png" alt="cover4"></div>
+                    <div class="image-item"><img src="./images/LB.4.png" alt="cover4"></div>
                 </div>
             </div>
 
@@ -124,15 +136,15 @@
             <div class="galerie-category" id="cover5">
                 <h3>17-21</h3>
                 <div class="first-image">
-                    <img src="../images/cover5.png" alt="cover5">
+                    <img src="./images/cover5.png" alt="cover5">
                 </div>
                 <div class="other-images">
-                    <div class="image-item"><img src="../images/17.png" alt="cover5"></div>
-                    <div class="image-item"><img src="../images/17.3.png" alt="cover5"></div>
-                    <div class="image-item"><img src="../images/17.2.png" alt="cover5"></div>
-                    <div class="image-item"><img src="../images/17.4.png" alt="cover5"></div>
-                    <div class="image-item"><img src="../images/17.5.png" alt="cover5"></div>
-                    <div class="image-item"><img src="../images/17.6.png" alt="cover5"></div>
+                    <div class="image-item"><img src="./images/17.png" alt="cover5"></div>
+                    <div class="image-item"><img src="./images/17.3.png" alt="cover5"></div>
+                    <div class="image-item"><img src="./images/17.2.png" alt="cover5"></div>
+                    <div class="image-item"><img src="./images/17.4.png" alt="cover5"></div>
+                    <div class="image-item"><img src="./images/17.5.png" alt="cover5"></div>
+                    <div class="image-item"><img src="./images/17.6.png" alt="cover5"></div>
                 </div>
             </div>
 
@@ -140,15 +152,15 @@
             <div class="galerie-category" id="cover6">
                 <h3>22-26</h3>
                 <div class="first-image">
-                    <img src="../images/cover6.png" alt="cover6">
+                    <img src="./images/cover6.png" alt="cover6">
                 </div>
                 <div class="other-images">
-                    <div class="image-item"><img src="../images/22.1.png" alt="cover6"></div>
-                    <div class="image-item"><img src="../images/22.3.png" alt="cover6"></div>
-                    <div class="image-item"><img src="../images/22.2.png" alt="cover6"></div>
-                    <div class="image-item"><img src="../images/22.5.png" alt="cover6"></div>
-                    <div class="image-item"><img src="../images/22.4.png" alt="cover6"></div>
-                    <div class="image-item"><img src="../images/22.6.png" alt="cover6"></div>
+                    <div class="image-item"><img src="./images/22.1.png" alt="cover6"></div>
+                    <div class="image-item"><img src="./images/22.3.png" alt="cover6"></div>
+                    <div class="image-item"><img src="./images/22.2.png" alt="cover6"></div>
+                    <div class="image-item"><img src="./images/22.5.png" alt="cover6"></div>
+                    <div class="image-item"><img src="./images/22.4.png" alt="cover6"></div>
+                    <div class="image-item"><img src="./images/22.6.png" alt="cover6"></div>
                 </div>
             </div>
         </div>
@@ -162,11 +174,11 @@
         </nav>
         <nav class="fansite1-footer-nav">
             <ul>
-                <li><a href="./fansite1/fansite1.html">Akira Toriyama</a></li>
-                <li><a href="./fansite1/oeuvres.html">Oeuvres</a></li>
-                <li><a href="./fansite1/adaptations.html">Adaptations</a></li>
-                <li><a href="./fansite1/evenements.html">Evènements</a></li>
-                <li><a href="./fansite1/contact.html">Contact</a></li>
+                <li><a href="../fansite1/fansite1.html">Akira Toriyama</a></li>
+                <li><a href="../fansite1/oeuvres.html">Oeuvres</a></li>
+                <li><a href="../fansite1/adaptations.html">Adaptations</a></li>
+                <li><a href="../fansite1/evenements.html">Evènements</a></li>
+                <li><a href="../fansite1/contact.html">Contact</a></li>
             </ul>
         </nav>
         <nav class="fansite2-footer-nav">
@@ -180,11 +192,11 @@
         </nav>
         <nav class="fansite3-footer-nav">
             <ul>
-                <li><a href="./fansite3/fansite3.html">Taiyo Matsumoto</a></li>
-                <li><a href="./fansite3/oeuvres.html">Oeuvres</a></li>
-                <li><a href="./fansite3/adaptations.html">Adaptations</a></li>
-                <li><a href="./fansite3/evenements.html">Evènements</a></li>
-                <li><a href="./fansite3/contact.html">Contact</a></li>
+                <li><a href="../fansite3/fansite3.html">Taiyo Matsumoto</a></li>
+                <li><a href="../fansite3/oeuvres.html">Oeuvres</a></li>
+                <li><a href="../fansite3/adaptations.html">Adaptations</a></li>
+                <li><a href="../fansite3/evenements.html">Evènements</a></li>
+                <li><a href="../fansite3/contact.html">Contact</a></li>
             </ul>
         </nav>
     </footer>

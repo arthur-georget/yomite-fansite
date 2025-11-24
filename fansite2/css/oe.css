@@ -8,7 +8,7 @@
     padding: 5px;
     width: 100%;
     max-width: 1200px; /* Ajuste la largeur du conteneur principal */
-    margin: 0 auto; /* Centre le conteneur (mais ça n'aura pas d'effet avec justify-content: flex-start) */
+    margin: 0 auto; /* Centre le conteneur */
 }
 
 /* Section générale, chaque bloc contenant une image et une description */
@@ -50,3 +50,4 @@
     color: #333; /* Couleur du texte */
     margin: 0; /* Supprime les marges par défaut */
 }
+

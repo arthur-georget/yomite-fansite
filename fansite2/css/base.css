@@ -1,6 +1,6 @@
 /* --- IMAGE DE FOND EN PLEIN ÉCRAN --- */
 body {
-    background-image: src=("images./fond.png");
+    background-image: url("images/fond.png"); /* Correction du path d'image */
     background-size: cover; /* S'assure que l'image couvre tout l'écran */
     background-position: center center; /* Centre l'image de fond */
     background-attachment: fixed; /* Rendre l'image de fond fixe lors du défilement */
@@ -31,12 +31,12 @@ html, body {
 
 /* Header avec image */
 header.barre {
-    background: url("images./header.png") center/cover no-repeat; /* Applique une image de fond pour le header */
+    background: url("images/header.png") center/cover no-repeat; /* Applique une image de fond pour le header */
 }
 
 /* Footer avec image */
 footer.barre.footer {
-    background: url("images./footer.png") center/cover no-repeat; /* Applique une image de fond pour le footer */
+    background: url("images/footer.png") center/cover no-repeat; /* Applique une image de fond pour le footer */
     min-height: 150px; /* Définit une hauteur minimale pour le footer */
     padding: 30px 0; /* Ajoute de l'espace autour du footer */
     max-width: 885px; /* Largeur maximale du footer */
@@ -88,4 +88,106 @@ footer.barre.footer {
 .logo:hover .title,
 .logo:hover .subtitle {
     color: #5b3c3c; /* Change la couleur des éléments au survol */
+}
+
+/* --- MOBILE RESPONSIVE --- */
+
+/* Responsive : Écrans de taille moyenne (tablettes) */
+@media (max-width: 1024px) {
+    /* Adaptation de la barre */
+    .barre {
+        width: 100%; /* Prendre toute la largeur de l'écran */
+        padding: 0 15px; /* Réduire les marges internes */
+    }
+
+    /* Logo */
+    .logo .title {
+        font-size: 28px; /* Réduire la taille du titre */
+    }
+
+    .logo .subtitle {
+        font-size: 16px; /* Réduire la taille du sous-titre */
+    }
+
+    /* Menu */
+    .menu {
+        gap: 20px; /* Réduire l'écart entre les éléments du menu */
+    }
+
+    .menu span {
+        font-size: 14px; /* Réduire la taille de la police du menu */
+    }
+}
+
+/* Responsive : Mobile (moins de 768px) */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Désactiver l'effet d'image fixe sur mobile */
+    }
+
+    .barre {
+        width: 100%; /* Prendre toute la largeur de l'écran */
+        height: auto; /* Hauteur ajustable */
+        padding: 10px; /* Réduire les paddings internes */
+        flex-direction: column; /* Aligner les éléments du header en colonne */
+    }
+
+    header.barre {
+        background-size: contain; /* Adapter l'image d'en-tête sur les petits écrans */
+        height: 150px; /* Ajuster la hauteur du header */
+    }
+
+    footer.barre.footer {
+        background-size: contain; /* Adapter l'image du footer */
+        padding: 20px 0; /* Réduire les paddings internes */
+    }
+
+    .logo {
+        flex-direction: row; /* Disposer le logo en ligne pour économiser de l'espace */
+        justify-content: center; /* Centrer le logo */
+        gap: 10px; /* Réduire l'écart entre le titre et le sous-titre */
+    }
+
+    .logo .title {
+        font-size: 24px; /* Réduire la taille du titre */
+    }
+
+    .logo .subtitle {
+        font-size: 14px; /* Réduire la taille du sous-titre */
+    }
+
+    .menu {
+        flex-direction: column; /* Disposer le menu en colonne pour le mobile */
+        gap: 15px; /* Espacement plus grand entre les éléments */
+        align-items: center; /* Centrer les éléments du menu */
+    }
+
+    .menu span {
+        font-size: 14px; /* Réduire la taille de la police du menu */
+        padding: 5px; /* Ajouter un peu de padding pour améliorer l'interaction */
+    }
+
+    .menu span.bold {
+        font-weight: bold;
+    }
+}
+
+/* Très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    .logo .title {
+        font-size: 20px; /* Réduire davantage la taille du titre */
+    }
+
+    .logo .subtitle {
+        font-size: 12px; /* Réduire la taille du sous-titre */
+    }
+
+    .menu span {
+        font-size: 13px; /* Taille encore plus petite pour les éléments du menu */
+    }
+
+    footer.barre.footer {
+        font-size: 14px; /* Réduire la taille de la police du footer */
+        padding: 10px 0; /* Réduire les paddings du footer */
+    }
 }
