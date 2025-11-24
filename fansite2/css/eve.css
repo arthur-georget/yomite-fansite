@@ -1,35 +1,45 @@
-/* Conteneur général des blocs */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px; /* espace entre chaque bloc */
+    gap: 60px; 
     padding: 40px 0;
 }
 
-/* Bloc principal */
-.bloc {
-    width: 70%;
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; 
+    width: 100%;
+}
+
+
+.section {
+    flex: 1 1 23%;
+    box-sizing: border-box;
     background: #ffffff;
     border: 4px solid #000;
     border-radius: 8px;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 6px 6px 0px #000;
     display: flex;
-    justify-content: center;
-}
-
-/* Contenu interne du bloc */
-.bloc-content {
-    display: flex;
-    flex-direction: row; /* image à gauche + texte à droite */
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
-/* Style des images dans les blocs */
-.bloc-content img {
-    width: 380px; /* taille augmentée */
+.image-container {
+    width: 100%;
+    text-align: center;
+}
+
+
+.image-container img {
+    width: 100%; 
+    max-width: 380px; 
     height: auto;
     border-radius: 6px;
     cursor: pointer;
@@ -37,15 +47,36 @@ main {
 }
 
 /* Petit zoom au survol */
-.bloc-content img:hover {
+.image-container img:hover {
     transform: scale(1.05);
 }
 
-/* Texte */
-.bloc-content p {
+/* Texte descriptif sous l'image */
+.section p {
     font-size: 1.6rem;
     line-height: 1.5;
     font-weight: 500;
-    text-align: left;
-    max-width: 70%;
+    text-align: center;
+    max-width: 80%; 
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+
+    .section p {
+        font-size: 1.4rem;
+    }
 }

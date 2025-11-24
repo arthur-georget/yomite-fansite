@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr"> <!-- Déclaration du type de document (HTML5) et spécification de la langue de la page (français) -->
+<html lang="fr">
 <head>
-    <meta charset="UTF-8"> <!-- Définition de l'encodage de caractères en UTF-8 pour supporter tous les caractères spéciaux -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour une mise en page responsive sur tous les appareils -->
-    <title>Contactez-nous</title> <!-- Titre de la page affiché dans l'onglet du navigateur -->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contactez-nous</title> 
     <link rel="stylesheet" href="../styles.css">
 
        <!-- HEADER -->
@@ -49,53 +49,53 @@
        
 
         .container {
-            display: flex; /* Utilise flexbox pour organiser le formulaire et l'image côte à côte */
-            justify-content: space-between; /* Espacement entre le formulaire et l'image */
-            align-items: center; /* Centre les éléments verticalement */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
             padding: 40px;
         }
 
         .form-container {
-            background-color: white; /* Fond blanc pour la zone de formulaire */
-            padding: 40px; /* Espace intérieur pour éviter que le texte touche les bords */
-            border-radius: 10px; /* Coins arrondis pour l'élément contenant le formulaire */
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre légère autour de la boîte pour un effet de profondeur */
+            background-color: white; 
+            padding: 40px; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
             width: 100%;
-            max-width: 600px; /* Limite la largeur du formulaire à 600px */
+            max-width: 600px; 
         }
 
         h1 {
-            text-align: center; /* Centrage du titre */
-            color: #6a4c9c; /* Couleur violette pour le titre */
+            text-align: center; 
+            color: #6a4c9c; 
         }
 
         .form-group {
-            margin-bottom: 20px; /* Espacement entre les groupes de champs */
+            margin-bottom: 20px; 
         }
 
         label {
-            font-size: 18px; /* Taille de la police pour les labels */
-            color: #333; /* Couleur sombre pour les labels */
-            display: block; /* Permet au label d'occuper toute la ligne */
-            margin-bottom: 5px; /* Espace entre le label et l'élément suivant */
+            font-size: 18px; 
+            color: #333; 
+            display: block; 
+            margin-bottom: 5px; 
         }
 
         input[type="text"],
         input[type="email"],
         textarea {
-            width: 100%; /* Les champs de texte occupent toute la largeur disponible */
-            padding: 10px; /* Espacement à l'intérieur des champs */
-            border: 1px solid #ddd; /* Bordure gris clair autour des champs */
-            border-radius: 5px; /* Coins arrondis des champs */
-            font-size: 16px; /* Taille du texte dans les champs */
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            font-size: 16px; 
         }
 
         textarea {
-            height: 150px; /* Hauteur de la zone de texte pour l'adresse postale */
+            height: 150px; 
         }
 
         select {
-            width: 100%; /* La liste déroulante occupe toute la largeur */
+            width: 100%; 
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -103,78 +103,71 @@
         }
 
         .checkbox-group {
-            margin-top: 10px; /* Espacement au-dessus de la checkbox */
-        }
+            margin-top: 10px; }
 
         .checkbox-group input {
-            margin-right: 10px; /* Espacement entre la checkbox et le texte */
+            margin-right: 10px; 
         }
 
         .submit-btn {
-            background-color: #6a4c9c; /* Fond violet pour le bouton */
-            color: white; /* Texte en blanc */
-            padding: 15px 30px; /* Espacement interne pour le bouton */
-            font-size: 18px; /* Taille du texte dans le bouton */
-            border: none; /* Supprime la bordure par défaut */
-            border-radius: 5px; /* Coins arrondis du bouton */
-            cursor: pointer; /* Changement du curseur pour indiquer que le bouton est cliquable */
+            background-color: #6a4c9c; 
+            color: white; 
+            padding: 15px 30px; 
+            font-size: 18px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
             display: block;
-            width: 100%; /* Le bouton occupe toute la largeur du formulaire */
+            width: 100%; 
         }
 
         .submit-btn:hover {
-            background-color: #08070a; /* Couleur plus foncée au survol du bouton */
-        }
+            background-color: #08070a; }
 
-        /* Style pour l'image à côté du formulaire */
         .image-container {
-            max-width: 600px; /* Limite la largeur de l'image à la même taille que le formulaire */
-            width: 100%; /* L'image occupe toute la largeur du conteneur */
-            height: auto; /* Garde les proportions de l'image */
+            max-width: 600px; 
+            width: 100%; 
+            height: auto; 
             display: block;
-            border-radius: 10px; /* Ajoute des coins arrondis à l'image */
+            border-radius: 10px; 
         }
 
         .image-container img {
-            width: 100%; /* L'image prend toute la largeur du conteneur */
-            height: 100%; /* L'image prend toute la hauteur du conteneur */
-            object-fit: cover; /* Permet à l'image de remplir le conteneur sans déformation */
-            border-radius: 10px; /* Coins arrondis sur l'image */
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            border-radius: 10px; 
         }
 
         /* Style pour la vidéo */
         .video-container {
-            display: none; /* La vidéo est cachée par défaut */
+            display: none; 
             width: 100%;
             height: 100%;
-            position: fixed; /* Position fixe pour prendre tout l'écran */
+            position: fixed; 
             top: 0;
             left: 0;
-            background-color: rgba(0, 0, 0, 0.7); /* Fond sombre pour le fond d'écran */
-            z-index: 9999; /* Place la vidéo au-dessus de tout autre contenu */
+            background-color: rgba(0, 0, 0, 0.7); 
+            z-index: 9999; 
         }
 
         .video-container video {
-            width: 100vw; /* Vidéo prend toute la largeur de l'écran */
-            height: 100vh; /* Vidéo prend toute la hauteur de l'écran */
-            object-fit: cover; /* Couvre tout l'écran sans déformation */
-            border-radius: 0; /* Pas de coins arrondis */
+            width: 100vw; 
+            height: 100vh; 
+            object-fit: cover; 
+            border-radius: 0; 
         }
 
-        /* Fin des styles CSS */
     </style>
 </head>
 <body>
 
-<!-- Conteneur principal -->
 <div class="container">
-    <!-- Formulaire de contact -->
     <div class="form-container">
-        <h1>Contactez-nous</h1> <!-- Titre de la page de contact -->
+        <h1>Contactez-nous</h1> 
 
         <!-- Début du formulaire -->
-        <form id="contactForm" action="#" method="post"> <!-- Formulaire avec méthode POST (les données ne sont pas envoyées ici, il s'agit de la partie front-end uniquement) -->
-
+        <form id="contactForm" action="#" method="post"> 
             <!-- Civilité (liste déroulante) -->
             <div class="form-group">
                 <label for="civilite">Civilité</label> <!-- Label pour la liste déroulante -->
@@ -188,63 +181,56 @@
 
             <!-- Nom -->
             <div class="form-group">
-                <label for="nom">Nom</label> <!-- Label pour le champ de nom -->
-                <input type="text" id="nom" name="nom" placeholder="Votre nom" required> <!-- Champ de texte pour le nom -->
+                <label for="nom">Nom</label> 
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required> 
             </div>
 
-            <!-- Prénom -->
             <div class="form-group">
-                <label for="prenom">Prénom</label> <!-- Label pour le champ de prénom -->
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required> <!-- Champ de texte pour le prénom -->
+                <label for="prenom">Prénom</label> 
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required> 
             </div>
 
-            <!-- Adresse postale -->
             <div class="form-group">
-                <label for="adresse">Adresse postale</label> <!-- Label pour le champ d'adresse -->
-                <textarea id="adresse" name="adresse" placeholder="Votre adresse postale" required></textarea> <!-- Zone de texte pour l'adresse postale -->
+                <label for="adresse">Adresse postale</label> 
+                <textarea id="adresse" name="adresse" placeholder="Votre adresse postale" required></textarea> 
             </div>
 
-            <!-- Politique de confidentialité -->
             <div class="checkbox-group">
                 <label for="politique">
-                    <input type="checkbox" id="politique" name="politique" required> <!-- Checkbox pour accepter la politique de confidentialité -->
+                    <input type="checkbox" id="politique" name="politique" required> 
                     J'accepte la <a href="#">politique de confidentialité</a> de BloomPetals.
                 </label>
             </div>
 
-            <!-- Bouton de soumission -->
             <div class="form-group">
-                <button type="submit" class="submit-btn">Envoyer</button> <!-- Bouton pour soumettre le formulaire -->
-            </div>
+                <button type="submit" class="submit-btn">Envoyer</button> 
 
-        </form> <!-- Fin du formulaire -->
+        </form> 
 
-    </div> <!-- Fin du conteneur du formulaire -->
+    </div> 
 
-    <!-- Conteneur pour l'image -->
+   
     <div class="image-container">
-        <img src="../images/content.png" alt="Service Après-Vente"> <!-- Affiche l'image avec un texte alternatif -->
+        <img src="../images/content.png" alt="Service Après-Vente"> 
     </div>
-</div> <!-- Fin du conteneur principal -->
+</div> 
 
-<!-- Conteneur pour la vidéo, cachée par défaut -->
 <div class="video-container" id="videoContainer">
     <video controls autoplay>
-        <source src="./video/reponse.mp4" type="video/mp4"> <!-- Source de la vidéo -->
+        <source src="./video/reponse.mp4" type="video/mp4"> 
         Votre navigateur ne prend pas en charge la vidéo.
     </video>
 </div>
 
-<!-- Script JavaScript -->
+
 <script>
-    // Lorsque le formulaire est soumis
+  
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêche l'envoi du formulaire
-        document.querySelector('.video-container').style.display = 'block'; // Affiche le conteneur de la vidéo
+        event.preventDefault(); 
+        document.querySelector('.video-container').style.display = 'block'; 
     });
 </script>
 
-<!-- ======================= FOOTER ======================= -->
 <footer>
     <nav class="global-footer-nav">
         <ul>
