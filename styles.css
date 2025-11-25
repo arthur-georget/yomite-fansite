@@ -60,9 +60,12 @@ article{
 header{
     background-color: var(--header-bg-color);
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 3;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 2px 0px 2px; 
 }
 header p{
     width: 100%;
@@ -75,7 +78,7 @@ header p{
 }
 main{
     background-color: var(--main-bg-color);
-    box-shadow: 2px 2px 2px;  
+    box-shadow: 2px 0px 2px;  
 }
 main p{
     padding-left: 10%;
@@ -86,7 +89,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 2px 0px 2px;
 }
 nav{
     background-color: var(--nav-bg-color);
